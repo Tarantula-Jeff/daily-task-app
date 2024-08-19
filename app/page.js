@@ -4,7 +4,7 @@ import {Tasklist} from "./components/tasks-list"
 
 
 
-export default function page(){
+export default function Page(){
   const [newTask , setNewTask] = useState("")
   const [taskList, setTaskList] = useState([])
   
