@@ -1,6 +1,6 @@
 import { TaskItem } from "./task"
 
-export default function Tasklist(){
+export  function Tasklist(props){
 
     //An array of tasks
 const tasks=[
@@ -21,7 +21,7 @@ const tasks=[
     {
         //Loop through the array and render each task as a list item
         //using .map function of the array data structures in js
-        tasks.map((task,index)=>{
+        props.items.map((task,index)=>{
             //return<li key={index}>{task}</li>
 
             return <TaskItem title={task} key={index}></TaskItem>
